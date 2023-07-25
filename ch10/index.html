@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="style/main.css" rel="stylesheet">
+	<title>ch 09</title>
+</head>
+<body>
+<div class="message">
+	message
+</div>
+
+<div class="message message--success">
+	Save successful
+</div>
+
+<div class="message message--warning">
+	Warning
+</div>
+
+<div class="message message--error">
+	Error
+</div>
+
+<button class="button">Button</button>
+<button class="button button--success">Success</button>
+<button class="button button--danger">Danger</button>
+<button class="button button--small">Small</button>
+<button class="button button--large">Large</button>
+
+<div class="media">
+	<img alt="runner" class="media__img" src="img/runner.png">
+	<div class="media__body">
+		<h4>Media heading</h4>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatum.
+		</p>
+	</div>
+</div>
+
+<div class="dropdown">
+	<button class="dropdown__toggle">Main Menu</button>
+	<div class="dropdown__drawer">
+		<ul class="menu">
+			<li>
+				<a href="/">Home</a>
+			</li>
+			<li>
+				<a href="/coffees">Coffees</a>
+			</li>
+			<li>
+				<a href="/brewers">Brewers</a>
+			</li>
+			<li>
+				<a href="/specials">Specials</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<script !src="">
+	(function () {
+		let toggle = document.querySelector('.dropdown__toggle');
+		toggle.addEventListener('click', function (event) {
+			event.preventDefault();
+			let dropdown = event.target.parentNode;
+			dropdown.classList.toggle('is-open');
+		});
+	}());
+</script>
+
+</body>
+</html>

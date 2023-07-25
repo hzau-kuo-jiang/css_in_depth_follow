@@ -1,0 +1,40 @@
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown__toggle {
+  background-color: #eeeeee;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  padding: 0.5em 2em 0.5em 1.5em;
+}
+
+.dropdown__toggle::after {
+  border: 0.3em solid;
+  border-color: black transparent transparent;
+  content: "";
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+.dropdown__drawer {
+  background-color: #eeeeee;
+  display: none;
+  left: 0;
+  min-width: 100%;
+  position: absolute;
+  top: 2.1em;
+}
+
+.dropdown.is-open .dropdown__toggle::after {
+  border-color: transparent transparent black;
+  top: 0.7em;
+}
+
+.dropdown.is-open .dropdown__drawer {
+  display: block;
+}
+
+/*# sourceMappingURL=dropdown.css.map */

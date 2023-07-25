@@ -1,0 +1,237 @@
+<!doctype html>
+<head>
+	<style>
+		:root {
+			box-sizing: border-box;
+		}
+		
+		*,
+		::before,
+		::after {
+			box-sizing: inherit;
+		}
+		
+		body {
+			background-color: #709b90;
+			font-family: Helvetica, Arial, sans-serif;
+		}
+		
+		body * + * {
+			margin-top: 1.5em;
+		}
+		
+		.container {
+			margin: 0 auto;
+			max-width: 1080px;
+		}
+		
+		.site-nav {
+			background: #5f4b44;
+			border-radius: .2em;
+			display: flex;
+			list-style: none;
+			padding: .5em;
+		}
+		
+		.site-nav > li {
+			margin-top: 0;
+		}
+		
+		.site-nav > li > a {
+			background: #cc6b5a;
+			color: white;
+			display: block;
+			padding: .5em 1em;
+			text-decoration: none;
+		}
+		
+		.site-nav > li + li {
+			margin-left: 1.5em;
+		}
+		
+		.site-nav > .nav-right {
+			margin-left: auto;
+		}
+		
+		.flex {
+			display: flex;
+		}
+		
+		.column-main {
+			background: #f4f4f4;
+			flex: 1;
+		}
+		
+		.column-sidebar {
+			display: flex;
+			flex: 0 0 300px;
+			flex-direction: column;
+			margin-left: 1.5em;
+			margin-top: 0;
+		}
+		
+		.column-sidebar .tile {
+			background: #f4f4f4;
+			flex: 1;
+		}
+		
+		.login-form {
+			padding: 1em;
+		}
+		
+		.login-form h3 {
+			text-align: right;
+			text-transform: uppercase;
+		}
+		
+		.login-form input:not([type="checkbox"]):not([type="radio"]) {
+			display: block;
+			margin-bottom: 1em;
+			margin-left: auto;
+			width: 100%;
+		}
+		
+		.login-form button {
+			border: 2px solid #cc6b5a;
+			border-radius: .2em;
+			cursor: pointer;
+			display: block;
+			font-size: .8rem;
+			margin-top: 3em;
+			padding: .5em 1em;
+		}
+		
+		.centered {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			text-align: center;
+		}
+		
+		.centered small {
+			color: #999;
+			font-size: 1em;
+			text-transform: uppercase;
+		}
+		
+		.cost {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+		}
+		
+		.cost > span {
+			font-size: 3rem;
+			margin-top: 0;
+		}
+		
+		.cost .cost-currency {
+			font-size: 1.5rem;
+		}
+		
+		.cost .cost-cents {
+			align-self: flex-start;
+			font-size: 1.5rem;
+			padding-top: .2em;
+		}
+		
+		.cta-button {
+			background: #cc6b5a;
+			color: #f4f4f4;
+			margin: 0 2em;
+			padding: .5em;
+			text-decoration: none;
+		}
+	
+	</style>
+</head>
+
+<body>
+<div class="container">
+	
+	<header>
+		<h1>Ink</h1>
+	</header>
+	
+	<nav>
+		<ul class="site-nav">
+			<li><a href="/">Home</a></li>
+			<li><a href="/features">Features</a></li>
+			<li><a href="/pricing">Pricing</a></li>
+			<li><a href="/support">Support</a></li>
+			<li class="nav-right">
+				<a href="/about">About</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<main class="flex">
+		<div class="column-main tile">
+			<h1>Team collaboration done right</h1>
+			<p>Thousands of teams from all over the
+				world turn to <b>Ink</b> to communicate
+				and get things done.</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam deserunt laboriosam, nobis porro
+				quam repudiandae tempore? Atque commodi consequuntur esse excepturi, labore maxime minus nemo. Iure iusto
+				molestiae repellendus vel voluptatibus! Blanditiis dolor ducimus illo necessitatibus perferendis, quis veniam.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam deserunt laboriosam, nobis porro
+				quam repudiandae tempore? Atque commodi consequuntur esse excepturi, labore maxime minus nemo. Iure iusto
+				molestiae repellendus vel voluptatibus! Blanditiis dolor ducimus illo necessitatibus perferendis, quis veniam.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam deserunt laboriosam, nobis porro
+				quam repudiandae tempore? Atque commodi consequuntur esse excepturi, labore maxime minus nemo. Iure iusto
+				molestiae repellendus vel voluptatibus! Blanditiis dolor ducimus illo necessitatibus perferendis, quis veniam.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam deserunt laboriosam, nobis porro
+				quam repudiandae tempore? Atque commodi consequuntur esse excepturi, labore maxime minus nemo. Iure iusto
+				molestiae repellendus vel voluptatibus! Blanditiis dolor ducimus illo necessitatibus perferendis, quis veniam.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam deserunt laboriosam, nobis porro
+				quam repudiandae tempore? Atque commodi consequuntur esse excepturi, labore maxime minus nemo. Iure iusto
+				molestiae repellendus vel voluptatibus! Blanditiis dolor ducimus illo necessitatibus perferendis, quis veniam.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam deserunt laboriosam, nobis porro
+				quam repudiandae tempore? Atque commodi consequuntur esse excepturi, labore maxime minus nemo. Iure iusto
+				molestiae repellendus vel voluptatibus! Blanditiis dolor ducimus illo necessitatibus perferendis, quis veniam.
+			</p>
+		</div>
+		<div class="column-sidebar">
+			<div class="tile">
+				<form class="login-form">
+					<h3>Login</h3>
+					<p>
+						<label for="username">Username</label>
+						<input id="username" name="username"
+						       type="text"/>
+					</p>
+					<p>
+						<label for="password">Password</label>
+						<input id="password" name="password"
+						       type="password"/>
+					</p>
+					<button type="submit">Login</button>
+				</form>
+			</div>
+			<div class="tile centered">
+				<small>Starting at</small>
+				<div class="cost">
+					<span class="cost-currency">$</span>
+					<span class="cost-dollars">20</span>
+					<span class="cost-cents">.00</span>
+				</div>
+				<a class="cta-button" href="/pricing">
+					Sign up
+				</a>
+			</div>
+		</div>
+	</main>
+
+</div>
+</body>

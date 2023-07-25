@@ -1,0 +1,31 @@
+.media {
+  background-color: #eee;
+  border-radius: 0.5em;
+  padding: 1.5em;
+}
+
+.media::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.media__img {
+  float: left;
+  margin-right: 1.5em;
+}
+
+.media--right > .media__img {
+  float: right;
+}
+
+.media__body {
+  margin-top: 0;
+  overflow: auto;
+}
+
+.media__body > h4 {
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=media.css.map */

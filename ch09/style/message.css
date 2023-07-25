@@ -1,0 +1,27 @@
+.message {
+  background-color: #e0f0f2;
+  border: 1px solid #265559;
+  border-radius: 0.2em;
+  color: #265559;
+  padding: 0.8em 1.2em;
+}
+
+.message--success {
+  background-color: #cfe8c9;
+  border-color: #2f5926;
+  color: #2f5926;
+}
+
+.message--warning {
+  background-color: #e8dec9;
+  border-color: #594826;
+  color: #594826;
+}
+
+.message--error {
+  background-color: #e8c9cf;
+  border-color: #59262f;
+  color: #59262f;
+}
+
+/*# sourceMappingURL=message.css.map */
